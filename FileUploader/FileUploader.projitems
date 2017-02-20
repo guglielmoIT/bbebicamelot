@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{0D04AADA-8E17-4E6C-98B2-123331F14741}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>FileUploader</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)waterfront.jpg" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)XAML\TextFileBrowserPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)XAML\ImageFileUploaderPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)XAML\TextFileUploaderPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)XAML\SignInPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)XAML\WelcomePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)XAML\GestioneUtentiPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)AzureStorage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Convert.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContainerType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)XAML\TextFileBrowserPage.xaml.cs">
+      <DependentUpon>TextFileBrowserPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)XAML\ImageFileUploaderPage.xaml.cs">
+      <DependentUpon>ImageFileUploaderPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)XAML\TextFileUploaderPage.xaml.cs">
+      <DependentUpon>TextFileUploaderPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)CS\FileUploaderPageCS.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CS\ImageFileUploaderPageCS.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CS\TextFileBrowserPageCS.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CS\TextFileUploaderPageCS.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)XAML\SignInPage.xaml.cs">
+      <DependentUpon>SignInPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Service\DialogService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\DrawableImage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\MomentsEntry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\MomentsPicker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\RoundedRectangleImage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\SendMomentCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\SignInViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\AccountService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\GravatarService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\HashService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\ScreenshotService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\BaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Colors.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Fonts.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Images.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Info.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\MD5.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ObservableExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Strings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Account.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Styles.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)XAML\WelcomePage.xaml.cs">
+      <DependentUpon>WelcomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)XAML\GestioneUtentiPage.xaml.cs">
+      <DependentUpon>GestioneUtentiPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)XAML\" />
+    <Folder Include="$(MSBuildThisFileDirectory)CS\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Service\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Controls\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Model\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Helpers\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FileUploader.GestioneUtentiPage" Title="Gestione Utenti" xmlns:local="clr-namespace:FileUploader;" BackgroundColor="{x:Static local:Colors.BackgroundColor}">
+	<StackLayout Margin="20">
+		<Label Text="Gestione Utenti">
+		</Label>
+		<Picker Title="Seleziona Utente" x:Name="pickerUser">
+		</Picker>
+		<Button x:Name="cancellaUtente" Text="{x:Static local:Strings.Cancella}" Clicked="Handle_Clicked1">
+		</Button>
+		<Image BackgroundColor="{x:Static local:Colors.SeparatorColor}" HeightRequest="1" />
+		<Label Text="Aggiungi Utente">
+		</Label>
+		<Entry x:Name="username" Placeholder="username">
+		</Entry>
+		<Entry x:Name="password" Placeholder="password">
+		</Entry>
+		<Label Text="Amministratore">
+		</Label>
+		<Switch x:Name="amministratore">
+		</Switch>
+		<Button x:Name="salvaUtenti" Text="{x:Static local:Strings.Save}" Clicked="Handle_Clicked">
+		</Button>
+		<ActivityIndicator x:Name="activityIndicator" />
+	</StackLayout>
+</ContentPage>

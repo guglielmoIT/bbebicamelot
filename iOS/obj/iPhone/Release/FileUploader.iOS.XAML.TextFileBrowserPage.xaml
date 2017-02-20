@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FileUploader.TextFileBrowserPage" Title="Foto" BackgroundColor="{x:Static local:Colors.BackgroundColor}" xmlns:local="clr-namespace:FileUploader;">
+	<StackLayout Margin="20">
+		<Label Text="Foto Disponibili" FontAttributes="Bold" HorizontalOptions="Center" />
+		<Button Text="Aggiorna" Clicked="OnGetFileListButtonClicked" />
+		<Picker x:Name="pickerList" SelectedIndexChanged="Handle_SelectedIndexChanged" Style="{StaticResource PickerListStyle}" />
+		<!--		<ListView x:Name="listView" ItemSelected="OnListViewItemSelected" />
+-->
+		<Image x:Name="editor" HeightRequest="500" IsEnabled="false" VerticalOptions="CenterAndExpand" />
+		<!--		<Button x:Name="deleteButton" Text="Delete" Clicked="OnDeleteButtonClicked" IsEnabled="false" />-->
+	</StackLayout>
+</ContentPage>
